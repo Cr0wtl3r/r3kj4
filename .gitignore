@@ -1,0 +1,94 @@
+# Rust: builds, pacotes e profiling
+target/
+/dist/
+/build/
+*.rs.bk
+*.profraw
+*.profdata
+/coverage/
+/lcov.info
+
+# Executáveis locais (distribuir releases pelo GitHub Releases)
+/r3kj4
+/r3kj4.exe
+*.pdb
+
+# Coletas: fontes recuperadas, relatórios e possíveis segredos
+/r3kj4-output*/
+/resultado/
+/coleta/
+/runtime/
+/recuperado/
+/analise/
+/autenticado/
+/segunda-coleta/
+/api/
+
+# Autenticação e dados de navegação locais
+*.session.json
+*.cookies.json
+*.har
+/sessions/
+/browser-profile/
+/chrome-profile/
+/cookies.txt
+/cookies.json
+/session.json
+/storage-state.json
+/storageState.json
+
+# Variáveis de ambiente e configurações privadas
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local.toml
+/secrets/
+/.secrets/
+/credentials.json
+/.cargo/credentials
+/.cargo/credentials.toml
+
+# Chaves e certificados locais
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Logs, caches e arquivos temporários
+*.log
+/logs/
+.cache/
+.cargo/registry/
+.cargo/git/
+.cargo/bin/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# Configuração pessoal de IDEs
+.idea/
+.vs/
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+
+# Metadados do sistema operacional
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# Cargo.lock, .cargo/config.toml e fixtures públicas devem ser versionados.

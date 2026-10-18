@@ -1,0 +1,21 @@
+schema_version = 1
+runtime = false
+
+[scan]
+out = "r3kj4-output"
+only = ["secrets", "endpoints", "urls", "comments"]
+timeout_secs = 20
+concurrency = 8
+jobs = 4
+max_depth = 2
+max_pages = 25
+max_artifacts = 10000
+max_asset_bytes = 52428800
+max_body_bytes = 2097152
+max_total_bytes = 1073741824
+allow_origins = []
+credential_origins = []
+
+[browser]
+page_timeout_secs = 60
+settle_ms = 1500

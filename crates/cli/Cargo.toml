@@ -1,0 +1,28 @@
+[package]
+name = "r3kj4-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "r3kj4"
+path = "src/main.rs"
+
+[dependencies]
+r3kj4-core = { path = "../core" }
+r3kj4-browser = { path = "../browser" }
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+toml.workspace = true
+url.workspace = true
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile.workspace = true
+

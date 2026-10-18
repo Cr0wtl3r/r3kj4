@@ -1,0 +1,24 @@
+schema_version = 1
+
+[[steps]]
+action = "fill"
+selector = "input[name=email]"
+env = "R3KJ4_EMAIL"
+
+[[steps]]
+action = "fill"
+selector = "input[name=password]"
+env = "R3KJ4_PASSWORD"
+
+[[steps]]
+action = "click"
+selector = "button[type=submit]"
+
+[[steps]]
+action = "wait_for"
+selector = "[data-authenticated]"
+timeout_ms = 15000
+
+[[steps]]
+action = "wait"
+duration_ms = 1000
